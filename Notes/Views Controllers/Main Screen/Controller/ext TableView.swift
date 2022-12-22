@@ -38,12 +38,12 @@ extension MainScreenTVC {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 //        TODO: - Реализовать нажатие на ячейку
-//        showTaskDifinition(index: indexPath.row)
+        presentNoteScreen(index: indexPath.row)
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
     override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        let deleteAction = UIContextualAction(style: .destructive, title: NSLocalizedString("delete", comment: "")) {_,_,_ in
+        let deleteAction = UIContextualAction(style: .destructive, title: "Удалить") {_,_,_ in
             self.deleteNote(index: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .automatic)
         }

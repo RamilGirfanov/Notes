@@ -22,6 +22,14 @@ class RealmManager {
         }
     }
     
+    func updateNote(index: Int, note: Note) {
+        let noteToUpdate = localRealm.objects(Note.self)[index]
+        try! localRealm.write {
+            noteToUpdate.title = note.title
+            noteToUpdate.text = note.text
+        }
+    }
+    
     func getNotes() -> [Note] {
         var notes: [Note] = []
         localRealm.objects(Note.self).forEach { notes.append($0) }

@@ -10,7 +10,9 @@ import UIKit
 protocol MainScreenManager {
     func deleteNote(index: Int)
     
-    func presentNoteScreen()
+    func presentAddNoteScreen()
+    
+    func presentNoteScreen(index: Int)
 }
 
 class MainScreenTVC: UITableViewController {
@@ -20,7 +22,7 @@ class MainScreenTVC: UITableViewController {
     private func setupScreen() {
         navigationItem.title = "Заметки"
         
-        let barButtonAdd = UIBarButtonItem(image: UIImage(systemName: "plus.app.fill"), style: .plain, target: self, action: #selector(presentNoteScreen))
+        let barButtonAdd = UIBarButtonItem(image: UIImage(systemName: "plus.app.fill"), style: .plain, target: self, action: #selector(presentAddNoteScreen))
         navigationItem.rightBarButtonItem = barButtonAdd
         
         tableView.register(MainScreenCell.self, forCellReuseIdentifier: MainScreenCell.identifier)

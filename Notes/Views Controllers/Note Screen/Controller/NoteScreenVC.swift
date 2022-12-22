@@ -9,6 +9,7 @@ import UIKit
 
 protocol NoteScreenManager {
     func saveNote()
+    func updateNote()
 }
 
 class NoteScreenVC: UIViewController {
@@ -18,6 +19,11 @@ class NoteScreenVC: UIViewController {
     lazy var noteScreen = NoteScreen()
     
     
+//    MARK: - Свойства для управления сохранением
+    
+    var noteWasOpen = false
+    var index = 0
+    
 //    MARK: - Lifecycle
     
     override func loadView() {
@@ -25,7 +31,7 @@ class NoteScreenVC: UIViewController {
     }
         
     override func viewDidDisappear(_ animated: Bool) {
-        saveNote()
+        noteWasOpen ? updateNote() : saveNote()
     }
 }
 

@@ -35,7 +35,6 @@ class NoteScreen: UIView, UITextViewDelegate {
     
     let noteText: UITextView = {
         let noteText = UITextView()
-//        noteText.text = "Текст"
         noteText.font = .systemFont(ofSize: 15)
         noteText.translatesAutoresizingMaskIntoConstraints = false
         return noteText

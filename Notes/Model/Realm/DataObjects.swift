@@ -9,12 +9,12 @@ import Foundation
 import RealmSwift
 
 class Note: Object {
-    @Persisted var name: String
+    @Persisted var title: String
     @Persisted var text: String
     
     convenience init(name: String, text: String) {
         self.init()
-        self.name = name
+        self.title = name
         self.text = text
     }
 }

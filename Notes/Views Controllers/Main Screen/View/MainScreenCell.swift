@@ -46,7 +46,7 @@ class MainScreenCell: UITableViewCell {
 //    MARK: - Функция заполнения
     
     func pullCell(note: Note) {
-        noteTitle.text = note.name
+        noteTitle.text = note.title
     }
     
     

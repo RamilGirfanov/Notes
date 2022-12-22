@@ -12,9 +12,19 @@ extension MainScreenTVC: MainScreenManager {
         RealmManager.shared.deleteNote(index: index)
     }
     
-    @objc func presentNoteScreen() {
+    @objc func presentAddNoteScreen() {
         let noteScreenVC = NoteScreenVC()
+        noteScreenVC.noteWasOpen = false
         navigationController?.pushViewController(noteScreenVC, animated: true)
     }
 
+    func presentNoteScreen(index: Int) {
+        let noteScreenVC = NoteScreenVC()
+        noteScreenVC.noteWasOpen = true
+        noteScreenVC.index = index
+        let note = RealmManager.shared.getNote(index: index)
+        noteScreenVC.noteScreen.noteTitle.text = note.title
+        noteScreenVC.noteScreen.noteText.text = note.text
+        navigationController?.pushViewController(noteScreenVC, animated: true)
+    }
 }
