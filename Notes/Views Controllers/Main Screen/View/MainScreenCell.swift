@@ -16,30 +16,37 @@ class MainScreenCell: UITableViewCell {
 //    }
 
 //    MARK: - UI objects
-    
-    var noteTitle: UILabel = {
-        var noteTitle = UILabel()
+        
+    let noteTitle: UILabel = {
+        let noteTitle = UILabel()
         noteTitle.font = .systemFont(ofSize: 20, weight: .bold)
-        noteTitle.textAlignment = .center
         noteTitle.translatesAutoresizingMaskIntoConstraints = false
         return noteTitle
+    }()
+    
+    let noteText: UILabel = {
+        let noteText = UILabel()
+        noteText.font = .systemFont(ofSize: 15)
+        noteText.numberOfLines = 1
+        noteText.translatesAutoresizingMaskIntoConstraints = false
+        return noteText
     }()
     
 //    MARK: - Layout
     
     private func layout() {
-        addSubview(noteTitle)
-        contentView.translatesAutoresizingMaskIntoConstraints = false
-
-        let safeIndent: CGFloat = 20
-
+        [noteTitle, noteText].forEach { contentView.addSubview($0) }
+        
+        let safeIndent1: CGFloat = 20
+        let safeIndent2: CGFloat = 8
+        
         NSLayoutConstraint.activate([
-            contentView.heightAnchor.constraint(equalToConstant: 44),
+            noteTitle.topAnchor.constraint(equalTo: contentView.topAnchor, constant: safeIndent2),
+            noteTitle.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: safeIndent1),
             
-            noteTitle.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
-//            noteTitle.topAnchor.constraint(equalTo: contentView.topAnchor, constant: safeIndent),
-            noteTitle.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: safeIndent),
-//            noteTitle.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -safeIndent)
+            noteText.topAnchor.constraint(equalTo: noteTitle.bottomAnchor),
+            noteText.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: safeIndent1),
+            noteText.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -safeIndent2)
         ])
     }
     
@@ -47,6 +54,7 @@ class MainScreenCell: UITableViewCell {
     
     func pullCell(note: Note) {
         noteTitle.text = note.title
+        noteText.text = note.text
     }
     
     
