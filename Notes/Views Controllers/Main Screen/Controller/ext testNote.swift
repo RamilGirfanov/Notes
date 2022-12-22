@@ -7,12 +7,12 @@
 
 import UIKit
 
-extension MainScreenTVC {
-    func testNote() {
-        if UserDefaults.standard.bool(forKey: "firstLaunchApp") == true {
-            let note = Note(name: "Тестовая заметка", text: "Какой-то текст")
-            RealmManager.shared.saveNote(note: note)
-        }
-        UserDefaults.standard.set(false, forKey: "firstLaunchApp")
-    }
-}
+ extension MainScreenTVC {
+     func testNote() {
+         if UserDefaults.standard.bool(forKey: "appWasLaunch") == false {
+             let note = Note(name: "Тестовая заметка", text: "Какой-то текст")
+             RealmManager.shared.saveNote(note: note)
+         }
+         UserDefaults.standard.set(true, forKey: "appWasLaunch")
+     }
+ }

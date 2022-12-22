@@ -16,10 +16,11 @@ class MainScreenCell: UITableViewCell {
 //    }
 
 //    MARK: - UI objects
-        
+    
     let noteTitle: UILabel = {
         let noteTitle = UILabel()
         noteTitle.font = .systemFont(ofSize: 20, weight: .bold)
+        noteTitle.textAlignment = .center
         noteTitle.translatesAutoresizingMaskIntoConstraints = false
         return noteTitle
     }()
