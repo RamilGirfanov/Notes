@@ -23,6 +23,8 @@
 		7438003D2954900A00EB250A /* ext NoteScreenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7438003C2954900A00EB250A /* ext NoteScreenManager.swift */; };
 		7438003F2954979D00EB250A /* ext TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7438003E2954979D00EB250A /* ext TableView.swift */; };
 		74380041295498FE00EB250A /* ext MainScreenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74380040295498FE00EB250A /* ext MainScreenManager.swift */; };
+		7455BA7F2954EB970084E6CC /* ext testNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7455BA7E2954EB970084E6CC /* ext testNote.swift */; };
+		7455BA812954ED8A0084E6CC /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7455BA802954ED8A0084E6CC /* Settings.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		7438003C2954900A00EB250A /* ext NoteScreenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ext NoteScreenManager.swift"; sourceTree = "<group>"; };
 		7438003E2954979D00EB250A /* ext TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ext TableView.swift"; sourceTree = "<group>"; };
 		74380040295498FE00EB250A /* ext MainScreenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ext MainScreenManager.swift"; sourceTree = "<group>"; };
+		7455BA7E2954EB970084E6CC /* ext testNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ext testNote.swift"; sourceTree = "<group>"; };
+		7455BA802954ED8A0084E6CC /* Settings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Settings.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,7 @@
 				743800042952E08A00EB250A /* AppDelegate.swift */,
 				743800062952E08A00EB250A /* SceneDelegate.swift */,
 				7438003629533FB500EB250A /* Constants.swift */,
+				7455BA802954ED8A0084E6CC /* Settings.plist */,
 				7438001F2952E84A00EB250A /* Model */,
 				743800222953219300EB250A /* Views Controllers */,
 				7438000D2952E08C00EB250A /* Assets.xcassets */,
@@ -94,6 +99,7 @@
 				7438002B29532F6200EB250A /* MainScreenTVC.swift */,
 				7438003E2954979D00EB250A /* ext TableView.swift */,
 				74380040295498FE00EB250A /* ext MainScreenManager.swift */,
+				7455BA7E2954EB970084E6CC /* ext testNote.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -234,6 +240,7 @@
 			files = (
 				743800112952E08C00EB250A /* LaunchScreen.storyboard in Resources */,
 				7438000E2952E08C00EB250A /* Assets.xcassets in Resources */,
+				7455BA812954ED8A0084E6CC /* Settings.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +253,7 @@
 			files = (
 				7438002F295333A100EB250A /* DataObjects.swift in Sources */,
 				743800392953451700EB250A /* NoteScreen.swift in Sources */,
+				7455BA7F2954EB970084E6CC /* ext testNote.swift in Sources */,
 				7438003D2954900A00EB250A /* ext NoteScreenManager.swift in Sources */,
 				743800052952E08A00EB250A /* AppDelegate.swift in Sources */,
 				743800312953344900EB250A /* RealmManager.swift in Sources */,

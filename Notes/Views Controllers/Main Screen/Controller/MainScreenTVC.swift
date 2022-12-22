@@ -33,6 +33,7 @@ class MainScreenTVC: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        testNote()
         setupScreen()
     }
     
