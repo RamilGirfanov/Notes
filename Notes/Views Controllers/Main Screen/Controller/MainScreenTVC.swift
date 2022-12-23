@@ -22,27 +22,20 @@ class MainScreenTVC: UITableViewController {
     private func setupScreen() {
         navigationItem.title = "Заметки"
         
-        
-        tableView.register(MainScreenCell.self, forCellReuseIdentifier: MainScreenCell.identifier)
-    }
-    
-    func addButton() {
         let barButtonAdd = UIBarButtonItem(image: UIImage(systemName: "plus.app.fill"), style: .plain, target: self, action: #selector(presentAddNoteScreen))
         navigationItem.rightBarButtonItem = barButtonAdd
+        
+        tableView.register(MainScreenCell.self, forCellReuseIdentifier: MainScreenCell.identifier)
     }
 
 
 //    MARK: - Lifecycle
     
-    override func loadView() {
-//        testNote()
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         testNote()
         setupScreen()
-        addButton()
     }
     
     override func viewDidAppear(_ animated: Bool) {

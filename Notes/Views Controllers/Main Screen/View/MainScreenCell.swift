@@ -56,6 +56,9 @@ class MainScreenCell: UITableViewCell {
     func pullCell(note: Note) {
         noteTitle.text = note.title
         noteText.text = note.text
+        if noteText.text!.isEmpty {
+            noteText.text = "Нет дополнительного текста"
+        }
     }
     
     

@@ -8,6 +8,11 @@
 import UIKit
 
 extension NoteScreenVC: NoteScreenManager {
+    
+//    @objc func addImage() {
+//
+//    }
+    
     func saveNote() {
         guard noteScreen.noteTitle.text?.isEmpty == false || noteScreen.noteText.text.isEmpty == false else { return }
         

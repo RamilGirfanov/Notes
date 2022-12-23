@@ -25,6 +25,7 @@
 		74380041295498FE00EB250A /* ext MainScreenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74380040295498FE00EB250A /* ext MainScreenManager.swift */; };
 		7455BA7F2954EB970084E6CC /* ext testNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7455BA7E2954EB970084E6CC /* ext testNote.swift */; };
 		7455BA812954ED8A0084E6CC /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7455BA802954ED8A0084E6CC /* Settings.plist */; };
+		7455BA832955047B0084E6CC /* ext NotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7455BA822955047B0084E6CC /* ext NotificationCenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		74380040295498FE00EB250A /* ext MainScreenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ext MainScreenManager.swift"; sourceTree = "<group>"; };
 		7455BA7E2954EB970084E6CC /* ext testNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ext testNote.swift"; sourceTree = "<group>"; };
 		7455BA802954ED8A0084E6CC /* Settings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Settings.plist; sourceTree = "<group>"; };
+		7455BA822955047B0084E6CC /* ext NotificationCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ext NotificationCenter.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,11 +77,9 @@
 				743800042952E08A00EB250A /* AppDelegate.swift */,
 				743800062952E08A00EB250A /* SceneDelegate.swift */,
 				7438003629533FB500EB250A /* Constants.swift */,
-				7455BA802954ED8A0084E6CC /* Settings.plist */,
+				7455BA8429550AF10084E6CC /* Resources */,
 				7438001F2952E84A00EB250A /* Model */,
 				743800222953219300EB250A /* Views Controllers */,
-				7438000D2952E08C00EB250A /* Assets.xcassets */,
-				7438000F2952E08C00EB250A /* LaunchScreen.storyboard */,
 				743800122952E08C00EB250A /* Info.plist */,
 			);
 			path = Notes;
@@ -144,6 +144,7 @@
 			children = (
 				7438003A295349E300EB250A /* NoteScreenVC.swift */,
 				7438003C2954900A00EB250A /* ext NoteScreenManager.swift */,
+				7455BA822955047B0084E6CC /* ext NotificationCenter.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -171,6 +172,16 @@
 				743800032952E08A00EB250A /* Notes */,
 				743800022952E08A00EB250A /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		7455BA8429550AF10084E6CC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7438000D2952E08C00EB250A /* Assets.xcassets */,
+				7438000F2952E08C00EB250A /* LaunchScreen.storyboard */,
+				7455BA802954ED8A0084E6CC /* Settings.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7455BA832955047B0084E6CC /* ext NotificationCenter.swift in Sources */,
 				7438002F295333A100EB250A /* DataObjects.swift in Sources */,
 				743800392953451700EB250A /* NoteScreen.swift in Sources */,
 				7455BA7F2954EB970084E6CC /* ext testNote.swift in Sources */,
@@ -407,7 +419,7 @@
 				INFOPLIST_FILE = Notes/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -438,7 +450,7 @@
 				INFOPLIST_FILE = Notes/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
