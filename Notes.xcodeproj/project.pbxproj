@@ -88,7 +88,8 @@
 		7438001F2952E84A00EB250A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				7438002D2953338500EB250A /* Realm */,
+				7438002E295333A100EB250A /* DataObjects.swift */,
+				743800302953344900EB250A /* RealmManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -155,15 +156,6 @@
 				743800382953451700EB250A /* NoteScreen.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		7438002D2953338500EB250A /* Realm */ = {
-			isa = PBXGroup;
-			children = (
-				7438002E295333A100EB250A /* DataObjects.swift */,
-				743800302953344900EB250A /* RealmManager.swift */,
-			);
-			path = Realm;
 			sourceTree = "<group>";
 		};
 		7438FFF82952E08A00EB250A = {
@@ -418,7 +410,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Notes/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -449,7 +441,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Notes/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;

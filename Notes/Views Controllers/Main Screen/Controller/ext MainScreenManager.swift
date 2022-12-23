@@ -14,12 +14,14 @@ extension MainScreenTVC: MainScreenManager {
     
     @objc func presentAddNoteScreen() {
         let noteScreenVC = NoteScreenVC()
+        noteScreenVC.navigationItem.largeTitleDisplayMode = .never
         noteScreenVC.noteWasOpen = false
         navigationController?.pushViewController(noteScreenVC, animated: true)
     }
 
     func presentNoteScreen(index: Int) {
         let noteScreenVC = NoteScreenVC()
+        noteScreenVC.navigationItem.largeTitleDisplayMode = .never
         noteScreenVC.noteWasOpen = true
         noteScreenVC.index = index
         let note = RealmManager.shared.getNote(index: index)

@@ -9,9 +9,7 @@ import UIKit
 
 protocol MainScreenManager {
     func deleteNote(index: Int)
-    
     func presentAddNoteScreen()
-    
     func presentNoteScreen(index: Int)
 }
 

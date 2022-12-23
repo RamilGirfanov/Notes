@@ -18,7 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let mainScreenTVC = MainScreenTVC()
         let navigationController = UINavigationController(rootViewController: mainScreenTVC)
-//        navigationController.navigationBar.prefersLargeTitles = true
+        navigationController.navigationBar.prefersLargeTitles = true
         
         window.rootViewController = navigationController
         window.makeKeyAndVisible()

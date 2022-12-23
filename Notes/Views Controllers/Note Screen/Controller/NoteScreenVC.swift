@@ -8,7 +8,6 @@
 import UIKit
 
 protocol NoteScreenManager {
-//    func addImage()
     func saveNote()
     func updateNote()
 }
@@ -30,11 +29,6 @@ class NoteScreenVC: UIViewController {
     override func loadView() {
         view = noteScreen
         setupNC()
-        
-//        let barButtonAddImage = UIBarButtonItem(image: UIImage(systemName: "photo.artframe"), style: .plain, target: self, action: #selector(addImage))
-//        navigationItem.rightBarButtonItem = barButtonAddImage
-        
-        
     }
         
     override func viewDidDisappear(_ animated: Bool) {
